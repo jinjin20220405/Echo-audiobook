@@ -1,0 +1,32 @@
+# Echo-audiobook 依赖列表
+# Python 3.10+ 
+
+# ===== Web UI =====
+gradio>=4.0.0
+
+# ===== AI 调用 =====
+# DeepSeek / 智谱 GLM / Kimi 都兼容 OpenAI SDK
+openai>=1.0.0
+pyyaml>=6.0
+python-dotenv>=1.0
+
+# ===== TTS - 免费云端（M5 阶段使用）=====
+edge-tts>=6.1.0
+
+# ===== TTS - 商用云端（M7 阶段使用,暂时注释）=====
+# alibabacloud-nls-python-sdk  # 阿里云 NLS
+# volcengine                    # 字节火山引擎
+
+# ===== 音频处理 =====
+pydub>=0.25.1
+# 注意:ffmpeg 是系统级依赖,不通过 pip 安装
+# Windows 安装命令:winget install ffmpeg
+
+# ===== epub 解析（V2 阶段使用,暂时注释）=====
+# ebooklib>=0.18
+
+# ===== 数据库 =====
+# sqlite3 是 Python 内置模块,无需安装
+
+# ===== 开发工具 =====
+pytest>=7.0
